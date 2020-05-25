@@ -54,6 +54,29 @@
     <li><a href="blank.html">Сливочное</a></li>
   </ul>
   <h1>Сливочное мороженое</h1>
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+   <label for="sorting">Сортировка</label>
+   <select name="sorting" id="sorting">
+     <option selected>по популярности</option>
+     <option>сначала недорогие</option>
+     <option>сначала дорогие</option>
+     <option>по жирности</option>
+   </select>
+   <label for="range">Цена: 100₽ - 500₽</label>
+   <input type="range" id="range" min="100" max="500">
+   <p>Жирность</p>
+   <label><input type="radio" name="fat-content" value="0">0%</label>
+   <label><input type="radio" name="fat-content" value="0-10">до 10%</label>
+   <label><input type="radio" name="fat-content" value="10-30">до 30%</label>
+   <label><input type="radio" name="fat-content" value="30+">выше 30%</label>
+   <p>Наполнители</p>
+   <label><input type="checkbox"> шоколадные </label>
+   <label><input type="checkbox"> сахарные присыпки </label>
+   <label><input type="checkbox"> фрукты </label>
+   <label><input type="checkbox"> сиропы </label>
+   <label><input type="checkbox"> джемы </label>
+   <button>Применить</button>
+  </form>
   <ul>
     <li>
       <img src="img/ice1.png" weidth="100" height="100"
