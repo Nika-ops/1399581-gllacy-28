@@ -1,0 +1,139 @@
+
+
+:root {
+    --basic-green: #849D8F;
+    --basic-gray: #8996A6;
+    --basic-brown: #9D8B84;
+    --basic-white: #FFFFFF;
+    --former-white: #F8F7F4;
+    --gray-stroke: #D3D3D2
+    --gray-place: #999999;
+    --dusty-orange-dark: #D07058;
+    --dusty-orange: #F6B5A5;
+    --dusty-orange-light: #F8DED7;
+    --whitish-exception: #EDEDED;
+    --basic-orange: #F26843;
+    --redish-orange: #E84D37;
+    --peachy: #FFBC9E;
+    --basic-black: #323232;
+    --blackish: #5A5A5A;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    background-image: url("../img/Background1.png");
+    background-position: top center; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+a {
+    text-decoration: underline;
+    color: var(--basic-white)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.upper-left {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.catalog-links a {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    text-decoration: none;
+}
+
+.new {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.contact.info {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contact-info a {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.store-info {
+    color: var(--basic-black);
+    text-align: center;
+}
+
+.blog-news {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--basic-black);
+}
+
+.ten-ways {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.mailing {
+    color: var(--blackish);
+}
+
+.creamy {
+    font-size: 35px;
+    line-height: 41px;
+    color: var(--basic-white);
+    font-weight: 700;
+}
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+span {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.feedback {
+    display: none;
+}

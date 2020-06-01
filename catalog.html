@@ -3,47 +3,50 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <nav>
-     <a href="index.html">
-     <img src="img/logo_gllacy.svg" alt="Логотип Глейси"></a>
-     <ul>
+  <nav class="main-navigation">
+    <img src="img/logo_gllacy.svg" alt="Логотип Глейси">
+    <ul class="upper-left">
       <li><a href="blank.html">Каталог</a></li>
-        <ul>
-          <li><a href="blank.html">Новинки</a></li>
-          <li><a href="catalog.html">Сливочное</a></li>
-          <li><a href="blank.html">Щербеты</a></li>
-          <li><a href="blank.html">Фруктовый лед</a></li>
-          <li><a href="blank.html">Мелорин</a></li>
-        </ul>
-       <li><a href="blank.html">Доставка и оплата</a></li>
-       <li><a href="blank.html">О Компании</a></li>
-     </ul>
-     <div>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-       <label><input type="search" name="search" id="search"
-       placeholder="Что ищем?"> Поиск </label>
-      </form>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-       <button type="button">Вход</button>
-       <label><input type="email" name="email" 
-        placeholder="Электронная почта"> Почта </label>
-       <label><input type="password" name="password" placeholder="Пароль">
-        Пароль </label>
-       <button type="submit">Войти</button>
-       <a href="blank.html">Забыли пароль?</a>
-       <a href="blank.html">Новая регистрация</a>
-      </form>
+        <ul class="catalog-links">
+            <li class="new"><a href="blank.html">Новинки</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="blank.html">Щербеты</a></li>
+            <li><a href="blank.html">Фруктовый лед</a></li>
+            <li><a href="blank.html">Мелорин</a></li>
+          </ul>
+      <li><a href="blank.html">Доставка и оплата</a></li>
+      <li><a href="blank.html">О Компании</a></li>
+    </ul>
+    <div>
+      <a href="blank.html"></a>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" class="search">
+         <label><input type="search" name="search" placeholder="Что ищем?">Поиск</label>
+        </form>
+      <a href="blank.html"></a>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" class="login">
+         <button type="button">Вход</button>
+         <label class="visually-hidden"><input type="email" name="email" 
+          placeholder="Электронная почта"> Почта </label>
+         <label class="visually-hidden"><input type="password" name="password" placeholder="Пароль">
+          Пароль</label>
+         <button type="submit">Войти</button>
+         <a href="blank.html">Забыли пароль?</a>
+         <a href="blank.html">Новая регистрация</a>
+        </form>
       <div class="cart">
-       <a href="blank.html">Корзина</a>
-       <a href="blank.html">Оформить заказ</a>
+         <a href="blank.html">Корзина</a>
+         <a href="blank.html">Оформить заказ</a>
       </div>
     </div>
   </nav>
-  <p>С 10 до 20, ежедневно
+  <p class="contact-info">С 10 до 20, ежедневно
     <a href="tel:88124502525">8 812 450-25-25</a></p>
 </header>
 
@@ -54,7 +57,7 @@
     <li><a href="blank.html">Сливочное</a></li>
   </ul>
   <form action="https://echo.htmlacademy.ru/courses" method="post">
-    <h1>Сливочное мороженое</h1>
+    <h1 class="creamy">Сливочное мороженое</h1>
     <fieldset>
      <legend>Сортировка</legend>
      <select name="sorting" id="sorting">
@@ -65,8 +68,12 @@
      </select>
     </fieldset>
     <fieldset>
-     <legend>Цена: 100₽ - 500₽</legend>
-     <input type="range" id="range" min="100" max="500">
+     <legend>Цена</legend>
+     <p>Цена: 100₽ - 500₽</p>
+     <div class="range">
+       <div class="range-1"></div>
+       <div class="range-2"></div>
+     </div>
     </fieldset>
     <fieldset>
      <legend>Жирность</legend>
@@ -89,84 +96,84 @@
     <li>
       <img src="img/ice1.png" weidth="100" height="100"
       alt="С апельсиновым джемом и цитрусовой стружкой">
-      <p>310 ₽<span>/кг</span></p>
+      <p class="price">310 ₽<span>/кг</span></p>
       <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice2.png" weidth="100" height="100"
        alt="Кофейное с кусочками шоколада">
-       <p>380 ₽<span>/кг</span></p>
+       <p class="price">380 ₽<span>/кг</span></p>
        <p>Сливочно-кофейное с кусочками шоколада</p>
        <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice3.png" weidth="100" height="100"
        alt="Клубничное с присыпкой из белого шоколада">
-       <p>355 ₽<span>/кг</span></p>
+       <p class="price">355 ₽<span>/кг</span></p>
        <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
        <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice4.png" weidth="100" height="100"
       alt="Крем-брюле с карамельной подливкой">
-      <p>415 ₽<span>/кг</span></p>
+      <p class="price">415 ₽<span>/кг</span></p>
       <p>Сливочное крем-брюле с карамельной подливкой</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice5.png" weidth="100" height="100"
        alt="С брусничным джемом">
-      <p>325 ₽<span>/кг</span></p>
+      <p class="price">325 ₽<span>/кг</span></p>
       <p>Сливочное с брусничным джемом</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice6.png" weidth="100" height="100"
       alt="Черничное с цельными ягодами черники">
-      <p>410 ₽<span>/кг</span></p>
+      <p class="price">410 ₽<span>/кг</span></p>
       <p>Сливочно-черничное с цельными ягодами черники</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice7.png" weidth="100" height="100"
       alt="Лимонное с карамельной посыпкой">
-      <p>375 ₽<span>/кг</span></p>
+      <p class="price">375 ₽<span>/кг</span></p>
       <p>Сливочно-лимонное с карамельной посыпкой</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice8.png" weidth="100" height="100"
       alt="С шоколадной стружкой">
-      <p>320 ₽<span>/кг</span></p>
+      <p class="price">320 ₽<span>/кг</span></p>
       <p>Сливочное с шоколадной стружкой</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice9.png" weidth="100" height="100"
       alt="Ванильное с кусочками шоколада">
-      <p>440 ₽<span>/кг</span></p>
+      <p class="price">440 ₽<span>/кг</span></p>
       <p>Сливочно-ванильное с кусочками шоколада</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice10.png" weidth="100" height="100"
       alt="С ментоловым сиропом">
-      <p>435 ₽<span>/кг</span></p>
+      <p class="price">435 ₽<span>/кг</span></p>
       <p>Сливочное с ментоловым сиропом</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice11.png" weidth="100" height="100"
        alt="С кусочками черного шоколада">
-      <p>355 ₽<span>/кг</span></p>
+      <p class="price">355 ₽<span>/кг</span></p>
       <p>Сливочное с кусочками черного шоколада</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice12.png" weidth="100" height="100"
       alt="С мятным сиропом">
-      <p>420 ₽<span>/кг</span></p>
+      <p class="price">420 ₽<span>/кг</span></p>
       <p>Сливочное с мятным сиропом</p>
       <a href="blank.html">Быстрый просмотр</a>
     </li>
