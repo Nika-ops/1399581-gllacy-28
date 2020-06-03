@@ -55,23 +55,25 @@
     <p>Крем-брюле и пломбир с малиновым джемом</p>
     <a href="blank.html">Давайте оба</a>
   </div>
-  <div>
-    <h2>Малинка даром!</h2>
-    <p> 
-      При покупке 2 кг любого фруктового мороженого, добавим
-      в ваш заказ банку малинового варенья бесплатно.
-    </p>
-    <a href="blank.html">Хочу варенье!</a>
-  </div>
-  <div>
-    <h2>Шоколадки даром!</h2>
-    <p>
-      При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-      вкуснейшей шоколадной присыпки совершенно бесплатно.
-    </p>
-    <a href="blank.html">Хочу шоколадки!</a>
-  </div>
-  <div>
+  <section>
+    <div>
+      <h2>Малинка даром!</h2>
+      <p> 
+        При покупке 2 кг любого фруктового мороженого, добавим
+        в ваш заказ банку малинового варенья бесплатно.
+      </p>
+      <a href="blank.html">Хочу варенье!</a>
+    </div>
+    <div>
+      <h2>Шоколадки даром!</h2>
+      <p>
+        При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+        вкуснейшей шоколадной присыпки совершенно бесплатно.
+      </p>
+      <a href="blank.html">Хочу шоколадки!</a>
+    </div>
+  </section>
+  <section>
     <ul>
       <li>
         <img src="img/ice1.png" weidth="100" height="100"
@@ -102,7 +104,7 @@
         <a href="blank.html">Быстрый просмотр</a>
       </li>
     </ul>
-  </div>
+  </section>
   <section>
     <h1>Магазин Глэйси - это онлайн и офлайн магазин по
      продаже мороженого 
@@ -145,9 +147,8 @@
       происходит. Обещаем не спамить  и не слать всякой
       ненужной ерунды. Честно =)</p>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-       <label class="visually-hidden"><input type="email" name="email" 
-        placeholder="Электронная почта"> Почта </label>
-       <button type="submit"> Отправить </button>
+       <label><input type="email" name="email" placeholder="Электронная почта">Почта</label>
+       <button type="submit">Отправить</button>
       </form>
     </div>
   </section>
@@ -157,7 +158,7 @@
     Для заказов по телефону:
     <a href="tel:88124502525">8 812 450-25-25</a>
     (С 10 до 20 ежедневно)
-    <button>Форма обратной связи</button>
+    <a href="blank.html">Форма обратной связи</a>
   </address>
 </main>
 
@@ -185,7 +186,7 @@
 <div class="feedback">
  <form action="https://echo.htmlacademy.ru/courses" method="post">
    <h2>Мы обязательно вам ответим!</h2>
-   <button disabled>Закрыть</button>
+   <button aria-label="Закрыть"></button>
    <label><input type="text" name="name" 
     placeholder="Как вас зовут?">Имя</label>
    <label><input type="email" name="email" 
