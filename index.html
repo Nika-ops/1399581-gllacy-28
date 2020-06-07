@@ -12,9 +12,9 @@
 <header>
   <nav class="main-navigation">
     <img src="img/logo_gllacy.svg" alt="Логотип Глейси">
-    <ul class="upper-left">
+    <ul class="upper-left list-unstyle">
       <li><a href="blank.html">Каталог</a></li>
-       <ul class="catalog-links">
+       <ul class="catalog-links list-unstyle">
           <li class="new"><a href="blank.html">Новинки</a></li>
           <li><a href="catalog.html">Сливочное</a></li>
           <li><a href="blank.html">Щербеты</a></li>
@@ -27,14 +27,14 @@
     <div>
       <a href="blank.html"></a>
       <form action="https://echo.htmlacademy.ru/courses" method="post" class="search">
-       <label><input type="search" name="search" placeholder="Что ищем?">Поиск</label>
+       <label><input type="search" name="search" placeholder="Крем-брюле">Поиск</label>
       </form>
       <a href="blank.html"></a>
       <form action="https://echo.htmlacademy.ru/courses" method="post" class="login">
        <button type="button">Вход</button>
        <label class="visually-hidden"><input type="email" name="email" 
-        placeholder="Электронная почта"> Почта </label>
-       <label class="visually-hidden"><input type="password" name="password" placeholder="Пароль">
+        placeholder="email@example.com"> Почта </label>
+       <label class="visually-hidden"><input type="password" name="password" placeholder="......">
         Пароль</label>
        <button type="submit">Войти</button>
        <a href="blank.html">Забыли пароль?</a>
@@ -51,11 +51,11 @@
 </header>
 
 <main>
-  <div>
+  <div class="pair">
     <p>Крем-брюле и пломбир с малиновым джемом</p>
     <a href="blank.html">Давайте оба</a>
   </div>
-  <section>
+  <section class="for-free">
     <div>
       <h2>Малинка даром!</h2>
       <p> 
@@ -73,8 +73,8 @@
       <a href="blank.html">Хочу шоколадки!</a>
     </div>
   </section>
-  <section>
-    <ul>
+  <section class="items">
+    <ul class="list-unstyle">
       <li>
         <img src="img/ice1.png" weidth="100" height="100"
         alt="С апельсиновым джемом и цитрусовой стружкой">
@@ -110,7 +110,7 @@
      продаже мороженого 
      собственного производства на развес</h1>
     <div>
-      <ul class="store-info">
+      <ul class="store-info list-unstyle">
        <li>
        <p>Все наше мороженое изготавливается на 
        собственном производстве, с использованием 
@@ -147,7 +147,7 @@
       происходит. Обещаем не спамить  и не слать всякой
       ненужной ерунды. Честно =)</p>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-       <label><input type="email" name="email" placeholder="Электронная почта">Почта</label>
+       <label><input type="email" name="email" placeholder="email@example.com">Почта</label>
        <button type="submit">Отправить</button>
       </form>
     </div>
@@ -158,18 +158,18 @@
     Для заказов по телефону:
     <a href="tel:88124502525">8 812 450-25-25</a>
     (С 10 до 20 ежедневно)
-    <a href="blank.html">Форма обратной связи</a>
+    <a href="blank.html" class="feedback-link">Форма обратной связи</a>
   </address>
 </main>
 
 <footer>
-  <ul>
-    <li><a href="#">Твиттер</a></li>
-    <li><a href="#">Инстаграм</a></li>
-    <li><a href="#">Фейсбук</a></li>
-    <li><a href="#">Вконтакте</a></li>
+  <ul class="list-unstyle">
+    <li><a href="blank.html" aria-label="Твиттер">Твиттер</a></li>
+    <li><a href="blank.html" aria-label="Инстаграм">Инстаграм</a></li>
+    <li><a href="blank.html" aria-label="Фейсбук">Фейсбук</a></li>
+    <li><a href="blank.html" aria-label="Вконтакте">Вконтакте</a></li>
   </ul> 
-  <ul>
+  <ul class="list-unstyle">
     <li><a href="blank.html">Для поставщиков</a></li>
     <li><a href="blank.html">О производстве</a></li>
     <li><a href="blank.html">Наши документы</a></li>
@@ -187,11 +187,10 @@
  <form action="https://echo.htmlacademy.ru/courses" method="post">
    <h2>Мы обязательно вам ответим!</h2>
    <button aria-label="Закрыть"></button>
-   <label><input type="text" name="name" 
-    placeholder="Как вас зовут?">Имя</label>
+   <label><input type="text" name="name">Имя</label>
    <label><input type="email" name="email" 
-    placeholder="Ваша почта для ответа?">Почта</label>
-   <textarea name="comment" placeholder="Напишите что-нибудь"></textarea>
+    placeholder="email@example.com">Почта</label>
+   <textarea name="comment" placeholder="В свободной форме"></textarea>
    <button type="submit">Отправить</button>
    </form>
 </div>
