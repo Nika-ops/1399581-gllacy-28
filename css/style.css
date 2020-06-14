@@ -4,7 +4,7 @@
     --basic-brown: #9D8B84;
     --basic-white: #FFFFFF;
     --former-white: #F8F7F4;
-    --gray-stroke: #D3D3D2
+    --gray-stroke: #D3D3D2;
     --gray-place: #999999;
     --dusty-orange-dark: #D07058;
     --dusty-orange: #F6B5A5;
@@ -125,7 +125,7 @@ img {
     font-weight: 700;
 }
 
-h1 {
+.headline {
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -184,7 +184,7 @@ h1 {
     font-weight: 700;
 }
 
-address {
+address p {
     font-size: 14px;
     line-height: 20px;
     color: var(--basic-black);
