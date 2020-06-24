@@ -184,13 +184,13 @@ img {
     font-weight: 700;
 }
 
-address p {
+.direction p {
     font-size: 14px;
     line-height: 20px;
     color: var(--basic-black);
 }
 
-address a {
+.direction a {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
