@@ -27,6 +27,18 @@ body {
     background-color: var(--basic-green);
     background-image: url("../img/Background1.png");
     background-position: top center; 
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
 }
 
 .visually-hidden {
@@ -81,6 +93,13 @@ img {
     line-height: 18px;
 }
 
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
 .contact.info {
     font-size: 14px;
     line-height: 16px;
@@ -105,6 +124,7 @@ img {
     line-height: 44px;
     font-weight: 700;
     text-decoration: none;
+    align-self: center;
 }
 
 .for-free h2 {
@@ -210,3 +230,15 @@ img {
 .feedback {
     display: none;
 }
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 154px;
+    height: 64px; 
+}
+
