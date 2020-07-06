@@ -124,7 +124,13 @@ img {
     line-height: 44px;
     font-weight: 700;
     text-decoration: none;
-    align-self: center;
+}
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .for-free h2 {
@@ -143,6 +149,19 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.for-free {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .headline {
