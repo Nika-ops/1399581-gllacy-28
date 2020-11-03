@@ -32,18 +32,26 @@ body {
     flex-wrap: wrap;
 }
 
-html {
+.page {
     height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 header {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-left: 27px;
     margin-top: 9px;
     margin-right: 27px;
+    margin-bottom: 70px;
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
+
 }
 
 .visually-hidden {
@@ -81,43 +89,71 @@ img {
 }
 
 .logotip {
+    width: 154px;
+    height: 64px; 
     padding-top: 32px;
     padding-right: 24px;
+    outline: 5px solid rgba(17, 62, 211, 0.3);
+    outline-offset: -5px;
 }
 
 .catalogic {
     padding-top: 32px;
     padding-right: 32px;
+    outline: 5px solid rgba(204, 0, 255, 0.3);
+    outline-offset: -5px;
 }
 
 .delivery-and {
     padding-top: 32px;
     padding-right: 32px;
+    outline: 5px solid rgba(134, 0, 255, 0.3);
+    outline-offset: -5px;
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+    padding-left: 27px;
+    padding-right: 27px;
 }
 
 .about-company {
     padding-top: 32px;
     padding-right: 367px;
+    outline: 5px solid rgba(0, 225, 255, 0.3);
+    outline-offset: -5px;
 }
 
 .container-search {
     padding-top: 23px;
     padding-right: 10px;
+    outline: 5px solid rgba(255, 115, 0, 0.3);
+    outline-offset: -5px;
 }
 
 .container-login {
     padding-top: 23px;
     padding-right: 10px;
+    outline: 5px solid rgba(248, 10, 10, 0.3);
+    outline-offset: -5px;
 }
 
 .container-cart {
+    display: none;
     padding-top: 23px;
     padding-right: 27px;
+    outline: 5px solid hsla(286, 100%, 81%, 0.842);
+    outline-offset: -5px;
 }
 
 .upper-left {
     font-size: 16px;
     line-height: 18px;
+}
+
+.catalog-links {
+    opacity: 0;
 }
 
 .catalog-links a {
@@ -141,6 +177,8 @@ img {
 .contacts-container {
     margin-left: 1024px;
     margin-right: 27px;
+    outline: 5px solid rgba(7, 39, 82, 0.3);
+    outline-offset: -5px;
 }
 
 .contact.info {
