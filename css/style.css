@@ -152,9 +152,9 @@ img {
     line-height: 18px;
 }
 
-.catalog-links {
+/*.catalog-links {
     opacity: 0;
-}
+}*/
 
 .catalog-links a {
     font-size: 14px;
@@ -215,13 +215,13 @@ img {
     text-decoration: none;
     padding-left: 501px;
     padding-right: 501px;
-}
-
-.pair {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 198px;
+    height: 44px;
+    outline: 5px solid hsla(286, 100%, 81%, 0.842);
+    outline-offset: -5px;
 }
 
 .for-free h2 {
@@ -245,14 +245,83 @@ img {
 .for-free {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: flex-start;
 }
 
-.items {
+.raspberry h2 {
+    width: 273px;
+    height: 41px;
+    margin-left: 43px;
+    margin-right: 297px;
+}
+
+.raspberry p {
+    width: 514px;
+    height: 44px;
+    margin-left: 43px;
+    margin-right: 56px;
+}
+
+.raspberry a {
+    width: 120px;
+    height: 17px;
+    margin-left: 423px;
+    margin-right: 70px;
+}
+
+.chocolate h2 {
+    width: 317px;
+    height: 41px;
+    margin-left: 42px;
+    margin-right: 254px;
+}
+
+.chocolate p {
+    width: 514px;
+    height: 44px;
+    margin-left: 42px;
+    margin-right: 57px;
+}
+
+.chocolate a {
+    width: 147px;
+    height: 17px;
+    margin-left: 395px;
+    margin-right: 71px;
+}
+
+.items ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+}
+
+.items img {
+    width: 267px;
+    height: 267px;
+    margin-right: 26px;
+    margin-top: 40px;
+}
+
+.items p {
+    width: 267px;
+    height: 44px;
+    text-align: center;
+}
+
+.items price {
+    width: 121px;
+    height: 31px;
+}
+
+.items span {
+    width: 41px;
+    height: 21px;
+}
+
+.items a {
+    opacity: 0;
 }
 
 .headline {
@@ -260,11 +329,39 @@ img {
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-black);
+    width: 995px;
+    height: 60px;
+    margin-left: 47px;
+    margin-right: 158px;
 }
 
 .store-info {
+    display: flex;
+    width: 1146px;
+    height: 306px;
+    flex-direction: column;
+    flex-wrap: wrap;
     color: var(--basic-black);
-    text-align: center;
+}
+
+.all-our-ice {
+    width: 485px;
+    height: 55px;
+}
+
+.for-making-ice {
+    width: 484px;
+    height: 77px;
+}
+
+.buying-ingredients {
+    width: 482px;
+    height: 55px;
+}
+
+.delivery-of-ice {
+    width: 482px;
+    height: 55px;
 }
 
 .blog-news {
