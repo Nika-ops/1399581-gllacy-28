@@ -342,16 +342,22 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--basic-black);
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
 }
 
 .all-our-ice {
     width: 485px;
     height: 55px;
+    margin-top: 21px;
+    margin-bottom: 33px;
+    font-size: 16px;
 }
 
 .for-making-ice {
     width: 484px;
     height: 77px;
+    margin-bottom: 36px;
 }
 
 .buying-ingredients {
@@ -365,6 +371,9 @@ img {
 }
 
 .blog-news {
+    width: 163px;
+    height: 11px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: var(--basic-black);
