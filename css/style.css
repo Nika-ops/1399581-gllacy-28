@@ -37,10 +37,7 @@ body {
 }
 
 .page-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+    flex: 1 0 auto;
 }
 
 header {
@@ -116,6 +113,8 @@ img {
     margin: 0 auto;
     padding-left: 27px;
     padding-right: 27px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-company {
@@ -175,8 +174,10 @@ img {
 }
 
 .contacts-container {
+    display: flex;
     margin-left: 1024px;
     margin-right: 27px;
+    justify-content: flex-end;
     outline: 5px solid rgba(7, 39, 82, 0.3);
     outline-offset: -5px;
 }
@@ -336,14 +337,23 @@ img {
 }
 
 .store-info {
+display: flex;
+width: 1146px;
+height: 306px;
+flex-direction: column;
+flex-wrap: wrap;
+color: var(--basic-black);
+outline: 5px solid rgba(0, 255, 0, 0.3);
+outline-offset: -5px;
+}
+
+.store-pattern {
     display: flex;
     width: 1146px;
     height: 306px;
     flex-direction: column;
     flex-wrap: wrap;
-    color: var(--basic-black);
-    outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px;
+    align-items: center;
 }
 
 .all-our-ice {
@@ -363,11 +373,20 @@ img {
 .buying-ingredients {
     width: 482px;
     height: 55px;
+    margin-bottom: 33px;
 }
 
 .delivery-of-ice {
     width: 482px;
     height: 55px;
+    margin-bottom: 58px;
+}
+
+.our-news {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 220px;
 }
 
 .blog-news {
@@ -379,21 +398,35 @@ img {
     color: var(--basic-black);
 }
 
-.blog-news a {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
 .ten-ways {
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-black);
+    font-weight: 700;
+    text-decoration: underline;
+    width: 287px;
+    height: 77px;
 }
 
 .mailing {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 220px;
+}
+
+.news-and-mailing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subscribe {
     color: var(--blackish);
+}
+
+.direction {
+    align-self: flex-end;
 }
 
 .items p {
@@ -451,6 +484,12 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 
