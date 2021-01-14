@@ -29,6 +29,7 @@ body {
     background-position: top center; 
     min-height: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
