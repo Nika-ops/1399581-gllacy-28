@@ -111,11 +111,14 @@ img {
 
 .container {
     width: 1146px;
+    width: auto;
     margin: 0 auto;
     padding-left: 27px;
     padding-right: 27px;
     display: flex;
     flex-direction: column;
+    outline: 5px solid hsla(286, 100%, 81%, 0.842);
+    outline-offset: -5px;
 }
 
 .about-company {
@@ -338,14 +341,14 @@ img {
 }
 
 .store-info {
-display: flex;
-width: 1146px;
-height: 306px;
-flex-direction: column;
-flex-wrap: wrap;
-color: var(--basic-black);
-outline: 5px solid rgba(0, 255, 0, 0.3);
-outline-offset: -5px;
+    display: flex;
+    width: 1146px;
+    height: 306px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--basic-black);
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
 }
 
 .store-pattern {
@@ -487,10 +490,41 @@ outline-offset: -5px;
     justify-content: space-between;
 }
 
-.footer {
-    flex-shrink: 0;
+
+.down {
+    width: 1146px;
+    width: auto;
+    margin: 0 auto;
+    height: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    outline: 5px solid hsla(286, 100%, 81%, 0.842);
+    outline-offset: -5px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ /*По-моему чёт нездоровое происходит лол
+Разберусь с этим когда буду менять буквы на иконки*/
+    width: 164px;
+    height: 32px;
+    outline: 5px solid hsla(286, 100%, 81%, 0.842);
+    outline-offset: -5px;
+    margin: auto;
+}
+
+.info-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 327px;
+    height: 37px;
+    outline: 5px solid hsla(69, 84%, 49%, 0.842);
+    outline-offset: -5px;
+    margin: auto;
 }
 
 
